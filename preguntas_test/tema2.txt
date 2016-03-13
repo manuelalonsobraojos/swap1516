@@ -1,0 +1,17 @@
+<pregunta>
+	<enunciado>¿Cómo se consigue mejorar la disponibilidad?</enunciado>
+	<opcionA>Centrandonos unicamente en la Disponibilidad de red</opcionA>
+	<opcionB>Haciendo uso de subsistemas redundantes y monitorizarlos mejora la disponibilidad del sistema global</opcionB>
+	<opcionC>Haciendo trabajar 24 horas al dia los sistemas no es necesario ralizar ninguna mejora</opcionC>
+	<opcionD>Ninguna de las respuesta anteriores es correcta>
+	<solucion>B</solucion>
+</pregunta>
+
+<pregunta>
+	<enunciado>¿A qué se refiere la escalabilidad?</enunciado>
+	<opcionA>Se refiere a la optimización del hardware</opcionA>
+	<opcionB>Se refiere a la imposibilidad de un sistema de adaptarse a las situaciones de estres y de carga</opcionB>
+	<opcionC> se refiere a la capacidad de un sistema de manejar la carga, y el esfuerzo para adaptarse al nuevo nivel de carga</opcionC>
+	<opcionD>Ninguna de las respuesta anteriores es correcta>
+	<solucion>C</solucion>
+</pregunta>

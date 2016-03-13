@@ -1,0 +1,17 @@
+<pregunta>
+	<enunciado>¿Qué es una granja web?</enunciado>
+	<opcionA>Servidor web que sirve contenido web a usuarios finales</opcionA>
+	<opcionB>Instalaciones donde se producen webs</opcionB>
+	<opcionC>Es un conjunto de servidores dedicados a servir contenido web a los usuarios finales</opcionC>
+	<opcionD>Ninguna opción es correcta</opcionD>
+	<solucion>C</solucion>
+</pregunta>
+
+<pregunta>
+	<enunciado>¿Qué problema puede sufrir un sitio web que funcione con una sola máquina?</enunciado>
+	<opcionA>El sitio web no sufrirá ningun tipo de problema</opcionA>
+	<opcionB>Ante un incremento del número de accesos, el hardware y software comenzarán a fallar</opcionB>
+	<opcionC>El sitio web será más eficiente cuanto mayor sea el número de accesos</opcionC>
+	<opcionD>Ninguna opción es correcta</opcionD>
+	<solucion>B</solucion>
+</pregunta>
