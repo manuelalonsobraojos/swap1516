@@ -30,9 +30,10 @@ Para crear la clave DSA utilizaremos el comando: **ssh-keygen -t dsa**, acto seg
  
 ![img](https://github.com/manuelalonsobraojos/swap1516/blob/master/practicas/practica2/Captura5.PNG)
 
-###establecer una tarea en cron que se ejecute cada hora para mantener actualizado el contenido del directorio /var/www entre las dos máquinas
+###Establecer una tarea en cron que se ejecute cada hora para mantener actualizado el contenido del directorio /var/www entre las dos máquinas
 
-Cremoa un script para actualizar el directorio /var/www con el comando: **rsync -avz -e ssh root@<dir_IP_maquina1>:/var/ww /var/www/**.
-Una vez hemos creado el script le damos permisos de ejecución con el comando **chmod a+x script.sh** y añadimos una nueva tarea al archivo */etc/crontab* en el que el script se ejecutará por el usuario root en el minuto 0 de cada hora, de cada mes, de cada día de la semana, realizando pocia del contenio del directorio */var/www*
+Cremos un script para actualizar el directorio /var/www con el comando: **rsync -avz -e ssh root@<dir_IP_maquina1>:/var/ww /var/www/**.
+
+Una vez hemos creado el script le damos permisos de ejecución con el comando **chmod a+x script.sh** y añadimos una nueva tarea al archivo */etc/crontab* en el que el script se ejecutará por el usuario root en el minuto 0 de cada hora, de cada mes, de cada día de la semana, realizando copia del contenio del directorio */var/www*
 
 ![img](https://github.com/manuelalonsobraojos/swap1516/blob/master/practicas/practica2/Captura6.PNG)
