@@ -1,6 +1,6 @@
 #Ejercicio T2.2
 
-**Buscar frameworks y librerías para diferentes lenguajes quepermitan hacer aplicaciones altamente disponibles con relativa facilidad. **
+**Buscar frameworks y librerías para diferentes lenguajes quepermitan hacer aplicaciones altamente disponibles con relativa facilidad.**
 
 Los Frameworks que encontrado son:
 
