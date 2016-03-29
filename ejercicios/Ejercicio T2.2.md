@@ -18,7 +18,7 @@ Sitio oficial:[https://www.djangoproject.com/](https://www.djangoproject.com/)
 
 GitHub: [https://github.com/django/django](https://github.com/django/django) 
 
-<img src="http://html5facil.com/wp-content/uploads/2012/04/django-logo-negative.png" alt="Mountain View" style="width:150;height:150;">
+<img src="http://html5facil.com/wp-content/uploads/2012/04/django-logo-negative.png" alt="Mountain View" style="width:50;height:50;">
 ![imagen](http://html5facil.com/wp-content/uploads/2012/04/django-logo-negative.png)
 
 
