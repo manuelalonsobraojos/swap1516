@@ -18,7 +18,7 @@ Sitio oficial:[https://www.djangoproject.com/](https://www.djangoproject.com/)
 
 GitHub: [https://github.com/django/django](https://github.com/django/django) 
 
-<img src="http://html5facil.com/wp-content/uploads/2012/04/django-logo-negative.png" alt="" width="350" height="300">
+<img src="http://html5facil.com/wp-content/uploads/2012/04/django-logo-negative.png" alt="" width="400" height="300">
 
 
 
@@ -28,4 +28,4 @@ Sitio oficial:[https://symfony.com/](https://symfony.com/)
 
 GitHub: [https://github.com/symfony/symfony](https://github.com/symfony/symfony) 
 
-![imagen](http://symfony.com/logos/symfony_black_03.png?v=4)
+<img src="http://symfony.com/logos/symfony_black_03.png?v=4" alt="" width="150" height="150">
