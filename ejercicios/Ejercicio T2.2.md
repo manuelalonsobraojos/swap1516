@@ -9,6 +9,7 @@ Sitio oficial:[https://www.codeigniter.com](https://www.codeigniter.com)
 
 GitHub: [https://github.com/bcit-ci/CodeIgniter](https://github.com/bcit-ci/CodeIgniter) 
 
+<img src="http://www.jlaya.com/wp-content/uploads/code.png" alt="" width="128" height="128">
 ![imagen](http://www.jlaya.com/wp-content/uploads/code.png)
 
 -**Django**: es un framework web de Python de alto nivel que fomenta el rápido desarrollo y diseño limpio y pragmático. Construido por los desarrolladores con experiencia, que se encarga de gran parte de la molestia de desarrollo Web, para que pueda centrarse en la escritura de su aplicación sin necesidad de reinventar la rueda. Es de código abierto y libre.
