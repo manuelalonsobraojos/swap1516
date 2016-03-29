@@ -9,6 +9,7 @@ Sitio oficial:[https://www.codeigniter.com](https://www.codeigniter.com)
 
 GitHub: [https://github.com/bcit-ci/CodeIgniter](https://github.com/bcit-ci/CodeIgniter) 
 
+<img src="http://www.jlaya.com/wp-content/uploads/code.png" alt="Mountain View" style="width:304px;height:228px;">
 ![imagen](http://www.jlaya.com/wp-content/uploads/code.png)
 
 
