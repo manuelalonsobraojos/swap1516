@@ -1,5 +1,7 @@
-#Ejercicio T2.2
+#Ejercicios Tema2
 
+
+##Ejercicio 2.2:
 **Buscar frameworks y librerías para diferentes lenguajes quepermitan hacer aplicaciones altamente disponibles con relativa facilidad.**
 
 
@@ -19,8 +21,9 @@ Sitio oficial:[https://www.djangoproject.com/](https://www.djangoproject.com/)
 
 GitHub: [https://github.com/django/django](https://github.com/django/django) 
 
-<img src="http://html5facil.com/wp-content/uploads/2012/04/django-logo-negative.png" alt="" width="400" height="300" align="center">
-
+<p align="center">
+<img src="http://html5facil.com/wp-content/uploads/2012/04/django-logo-negative.png" alt="" width="400" height="300">
+</p>
 
 
 -**Symfony**: Es un framework de código abierto, una biblioteca de clases cohesivas escritas en PHP. Propociona una arquitectura, componentes y herramientas para construir aplicaiones webs complejas con mayor rapidez.
@@ -29,4 +32,6 @@ Sitio oficial:[https://symfony.com/](https://symfony.com/)
 
 GitHub: [https://github.com/symfony/symfony](https://github.com/symfony/symfony) 
 
-<img src="http://symfony.com/logos/symfony_black_03.png?v=4" alt="" width="150" height="150" align="center">
+<p align="center">
+<img src="http://symfony.com/logos/symfony_black_03.png?v=4" alt="" width="150" height="150" >
+</p>
