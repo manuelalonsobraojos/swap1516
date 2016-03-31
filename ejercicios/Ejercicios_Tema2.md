@@ -42,8 +42,14 @@ GitHub: [https://github.com/symfony/symfony](https://github.com/symfony/symfony)
 
 <table style="width:100%">
   <tr>
-    <td>**HAProxy**</td>
-    <td>HAProxy es una herramienta de software rápida y fiable y que ofrece a todos los usuarios un proxy TCP y HTTP de alta disponibilidad con control de balanceo de carga</td>		
+    <td>Balanceador software</td>
+    <td><b>HAProxy</b> es una herramienta de software rápida y fiable y que ofrece a todos los usuarios un proxy TCP y HTTP de alta disponibilidad con control de balanceo de carga</td>		
+  </tr>
+  <td>Balanceador hardware</td>
+    <td>El balanceador de carga <b>LoadMaster 2600</b></td>		
+  </tr>
+  <td>Balanceador de apicaciones</td>
+    <td>Barracuda Load Balancer ADC</td>		
   </tr>
   
 </table>
