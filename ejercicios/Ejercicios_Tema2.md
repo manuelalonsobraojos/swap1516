@@ -35,3 +35,15 @@ GitHub: [https://github.com/symfony/symfony](https://github.com/symfony/symfony)
 <p align="center">
 <img src="http://symfony.com/logos/symfony_black_03.png?v=4" alt="" width="150" height="150" >
 </p>
+
+
+### Ejercicio 2.4:
+**Buscar ejemplos de balanceadores software y hardware**
+
+<table style="width:100%">
+  <tr>
+    <td>HAProxy</td>
+    <td>HAProxy es una herramienta de software rápida y fiable y que ofrece a todos los usuarios un proxy TCP y HTTP de alta disponibilidad con control de balanceo de carga</td>		
+  </tr>
+  
+</table>
