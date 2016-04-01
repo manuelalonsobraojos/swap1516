@@ -1,6 +1,42 @@
 # Ejercicios Tema2
 
 
+### Ejercicio 2.1
+**Calcular la disponibilidad del sistema si tenemos dos réplicas de cada elemento (en total 3 elementos en cada subsistema). **
+
+<table style="width:100%">
+  <tr>
+    <th></th>
+    <th>Triplicado</th>
+  </tr>
+  <tr>
+    <td>SW</td>
+    <td>99.6625%</td>		
+  </tr>
+  <td>Aplicaciones</td>
+    <td>99.9%</td>		
+  </tr>
+  <td>BD</td>
+    <td>99.99%</td>		
+  </tr>
+  <td>DNS</td>
+    <td>99.99%</td>		
+  </tr>
+  <td>Firewall</td>
+    <td>99.66%</td>		
+  </tr>
+  <td>Switch</td>
+    <td>99.99%</td>		
+  </tr>
+  <td>CPD</td>
+    <td>99.99%</td>		
+  </tr>
+  <td>ISP</td>
+    <td>99.99%</td>		
+  </tr>
+</table>
+
+
 ### Ejercicio 2.2:
 **Buscar frameworks y librerías para diferentes lenguajes quepermitan hacer aplicaciones altamente disponibles con relativa facilidad.**
 
@@ -36,6 +72,13 @@ GitHub: [https://github.com/symfony/symfony](https://github.com/symfony/symfony)
 <img src="http://symfony.com/logos/symfony_black_03.png?v=4" alt="" width="150" height="150" >
 </p>
 
+
+### Ejercicio 2.3:
+**¿Cómo analizar el nivel de carga de cada uno de los subsistemas en el servidor? Buscar herramientas y aprender a usarlas...¡o recordar cómo usarlas! **
+
+sisoft Sandra proporcionará información sobre el hardware, el software y cualquier dispositivo del sistema que tengamos en nuestro ordenador, es un programa que contiene módulos diseñados para realizar un número importantede funciones sobre su ordenador personal, como la prueba de referencia, el analisis y el listado de componentes de software o hardware.
+
+Sitio oficial:[http://www.sisoftware.co.uk/](http://www.sisoftware.co.uk/)
 
 ### Ejercicio 2.4:
 **Buscar ejemplos de balanceadores software y hardware**
