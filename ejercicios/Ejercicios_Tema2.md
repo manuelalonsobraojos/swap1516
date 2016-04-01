@@ -34,6 +34,10 @@
   <td>ISP</td>
     <td>99.99%</td>		
   </tr>
+  </tr>
+  <th>Total</th>
+    <th>97.9%</th>		
+  </tr>
 </table>
 
 
