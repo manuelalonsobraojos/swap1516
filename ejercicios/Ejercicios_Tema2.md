@@ -74,7 +74,7 @@ GitHub: [https://github.com/symfony/symfony](https://github.com/symfony/symfony)
 
 
 ### Ejercicio 2.3:
-**¿Cómo analizar el nivel de carga de cada uno de los subsistemas en el servidor? Buscar herramientas y aprender a usarlas...¡o recordar cómo usarlas! **
+**¿Cómo analizar el nivel de carga de cada uno de los subsistemas en el servidor? Buscar herramientas y aprender a usarlas...¡o recordar cómo usarlas!**
 
 sisoft Sandra proporcionará información sobre el hardware, el software y cualquier dispositivo del sistema que tengamos en nuestro ordenador, es un programa que contiene módulos diseñados para realizar un número importantede funciones sobre su ordenador personal, como la prueba de referencia, el analisis y el listado de componentes de software o hardware.
 
