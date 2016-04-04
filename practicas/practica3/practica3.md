@@ -1,1 +1,1 @@
-#Práctica 3
+#Práctic 3
