@@ -1,0 +1,17 @@
+<pregunta>
+	<enunciado>¿Qué se consique con Nat?</enunciado>
+	<opcionA>Mejorar la velocidad de los servicios ofrecidos</opcionA>
+	<opcionB>favorecer el servicio de base de datos</opcionB>
+	<opcionC>Ocultar las verdaderas IPs de los servidores últimos</opcionC>
+	<opcionD>ofrecer varios servicios simultáneamente</opcionD>
+	<solucion>C</solucion>
+</pregunta>
+
+<pregunta>
+	<enunciado>¿Cual es la forma más segura de conectar una granja web a otras redes?</enunciado>
+	<opcionA>Configuración de DMZ doble.</opcionA>
+	<opcionB>Configuración sin DMZ</opcionB>
+	<opcionC>Configuración de DMZ simple</opcionC>
+	<opcionD>Todas las opciones son correctas</opcionD>
+	<solucion>A</solucion>
+</pregunta>
