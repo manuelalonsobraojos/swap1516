@@ -65,4 +65,7 @@ Una vez hayamos modificado la configuración, solo nos queda comprobar que el ba
 ```sh
 /usr/sbin/haproxy -f /etc/haproxy/haproxy.cfg
 ```
+Si despues de ejecutar la linea de comando anterior no nos ha salido ningun error o aviso es signo de que todo está correctamente, por lo que ya podemos hacer peticiones a la ip del balanceador con el comando **curl ip-balanceador** y nos mostrará las páginas de inicio de cada máquina alternativamente ya que se estan repartiendo el trabajo.
+
+
 
