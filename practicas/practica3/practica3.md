@@ -29,10 +29,11 @@ apt-get install nginx
 ![img](https://github.com/manuelalonsobraojos/swap1516/blob/master/practicas/practica3/capturas/Captura3.PNG)
 
 
-Despues de instalar nginx tenemos que modificar su configuracion ya que la configuración básica que tiene no nos vale, por lo que modificamos el fichero de configuración **/etc/nginx/conf.d/default.conf** eliminando el contenido que tuviese. El fichero debe de quedarnos como en la siguiente imagen.
+Despues de instalar nginx tenemos que modificar su configuracion ya que la configuración básica que tiene no nos vale, por lo que modificamos el fichero de configuración **/etc/nginx/conf.d/default.conf** eliminando el contenido que tuviese. El fichero debe de quedarnos como en la siguiente imagen. 
 
 ![img](https://github.com/manuelalonsobraojos/swap1516/blob/master/practicas/practica3/capturas/Captura4.PNG)
 
+Como vemos en la definición de "upstream" las IPs son las de nuestras másquinas servidoras. 
 Ahora reiniciaremos el servicio nginx con el comando:
 ```sh
 service nginx restart
@@ -44,3 +45,24 @@ Por defecto cada máquina tiene un peso de 1 pero podemos cambiarselo modificand
 En la siguiente imagen muestro el archivo modificado, en este caso la máquina 1 atenderá a dos peticiones de cada tres que lleguen.
 
 ![img](https://github.com/manuelalonsobraojos/swap1516/blob/master/practicas/practica3/capturas/Captura5.PNG)
+
+
+###Configurar una máquina e instalarle el haproxy como balanceador de carga
+
+En este apaartado vamos a instalar y a configurar el balanceador de carga Haproxy, para ello solo tenemos que ejecutar el comando:
+```sh
+apt-get install haproxy
+```
+En la siguiente imagen vemos la ejecución del comando.
+
+![img](https://github.com/manuelalonsobraojos/swap1516/blob/master/practicas/practica3/capturas/Captura6.PNG)
+
+Una vez hayamos instalado haproxy tenemos que modificar el archivo de configuración **/etc/haproxy/haproxy.cfg** ya que la configuración que trae por defecto no nos vale. La configuración nos deberia de quedar de la siguiente forma:
+
+![img](https://github.com/manuelalonsobraojos/swap1516/blob/master/practicas/practica3/capturas/Captura7.PNG)
+
+Una vez hayamos modificado la configuración, solo nos queda comprobar que el balanceador funciona. Primero lanzaremos haproxy utilizando el comando: 
+```sh
+/usr/sbin/haproxy -f /etc/haproxy/haproxy.cfg
+```
+
