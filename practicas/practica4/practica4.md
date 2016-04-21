@@ -201,7 +201,6 @@ Una vez hechas las mediciones con las tres configuraciones realizaremos una tabl
 </table>
 
 
-
 En la siguiente gráfica podremos observar como el **servidor solo** atiende más peticiones por segundo que las otras dos configuraciones y además tiene menos peticiones fallidas que las otras dos configuraciones.
 ![img](https://github.com/manuelalonsobraojos/swap1516/blob/master/practicas/practica4/capturas/grafica1.PNG)
 
