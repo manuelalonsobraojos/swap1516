@@ -15,11 +15,13 @@ ab -n 1000 -c 10 http://ip/
 El parámetro **-c 10** indica que se van a ejecutar 10 solicitudes concurrentemente y el parámetro **-n 1000** indica el número de solicitudes que se le van hacer al servidor, en este caso **1000**.
 La dirección ip que pondremos será la de la máquina contra la que vamos hacer el comando "**ab**".
 
-En la siguiente tabla veremos los resultados de ejecutar el comando "**ab**" contra la máquina 1:
+En la siguiente tabla veremos los resultados de ejecutar el comando "**ab**" contra el servidor solo:
+
+
 <table style="width:100%">
   <tr>
     <th>ab  
-    Máquina 1</th>
+    Servidor solo</th>
     <th>Time taken for tests</th>
     <th>Failed requests</th>
     <th>Requests per second</th>
@@ -56,7 +58,7 @@ En la siguiente tabla veremos los resultados de ejecutar el comando "**ab**" con
     <th>Media</th>
     <th>0.4035 s</th>	
     <th>0</th>
-    <th>2535.368cr/s</th>
+    <th>2535.368 r/s</th>
   </tr>
   </tr>
     <th>Desviación</th>
@@ -64,4 +66,137 @@ En la siguiente tabla veremos los resultados de ejecutar el comando "**ab**" con
     <th>0</th>
     <th>410.12959 r/s</th>
   </tr>
+</table>
+
+
+En la siguiente tabla veremos los resultados de ejecutar el comando "**ab**" contra la la granja web con **nginx**:
+
+
+<table style="width:100%">
+  <tr>
+    <th>ab  
+    nginx</th>
+    <th>Time taken for tests</th>
+    <th>Failed requests</th>
+    <th>Requests per second</th>
+  </tr>
+  <tr>
+    <td>Medición 1</td>
+    <td>0.961 s</td>		
+    <td>333</td>
+    <td>1040.26 r/s</td>
+  </tr>
+    <td>Medición 2</td>
+      <td>0.865 s</td>
+      <td>334</td>
+      <td>1156.54 r/s</td>
+  </tr>
+    <td>Medición 3</td>
+    <td>0.736 s</td>	
+    <td>333</td>
+    <td>1359 r/s</td>
+  </tr>
+  </tr>
+    <td>Medición 4</td>
+    <td>0.764 s</td>
+    <td>333</td>
+    <td>1309.39 r/s</td>
+  </tr>
+  </tr>
+    <td>Medición 5</td>
+    <td>0.731 s</td>
+    <td>666</td>
+    <td>1367.85 r/s</td>
+  </tr>
+  </tr>
+    <th>Media</th>
+    <th>0.8114 s</th>	
+    <th>399.8</th>
+    <th>1246.608 r/s</th>
+  </tr>
+  </tr>
+    <th>Desviación</th>
+    <th>0.09956</th>
+    <th>148.81</th>
+    <th>143.14757 r/s</th>
+  </tr>
+</table>
+
+En la siguiente tabla veremos los resultados de ejecutar el comando "**ab**" contra la la granja web con **haproxy**:
+
+
+<table style="width:100%">
+  <tr>
+    <th>ab  
+    haproxy</th>
+    <th>Time taken for tests</th>
+    <th>Failed requests</th>
+    <th>Requests per second</th>
+  </tr>
+  <tr>
+    <td>Medición 1</td>
+    <td>0.594 s</td>		
+    <td>500</td>
+    <td>1683.80 r/s</td>
+  </tr>
+    <td>Medición 2</td>
+      <td>0.602 s</td>
+      <td>500</td>
+      <td>1660.64 r/s</td>
+  </tr>
+    <td>Medición 3</td>
+    <td>0.583 s</td>	
+    <td>500</td>
+    <td>1714.89 r/s</td>
+  </tr>
+  </tr>
+    <td>Medición 4</td>
+    <td>0.593 s</td>
+    <td>500</td>
+    <td>1687.67 r/s</td>
+  </tr>
+  </tr>
+    <td>Medición 5</td>
+    <td>0.607 s</td>
+    <td>500</td>
+    <td>1648.51 r/s</td>
+  </tr>
+  </tr>
+    <th>Media</th>
+    <th>0.5958 s</th>	
+    <th>500</th>
+    <th>1679.102 r/s</th>
+  </tr>
+  </tr>
+    <th>Desviación</th>
+    <th>0.0092</th>
+    <th>0</th>
+    <th>25.75354 r/s</th>
+  </tr>
+</table>
+
+
+Una vez hechas las mediciones con las tres configuraciones realizaremos una tabla y un gráfico con las medias obtenidas, para así poder comparar los resultados.  
+<table style="width:100%">
+  <tr>
+    <th>ab</th>
+    <th>Time taken for tests</th>
+    <th>Failed requests</th>
+    <th>Requests per second</th>
+  </tr>
+  <tr>
+    <td>Servidor solo</td>
+    <td>0.4035 s</td>		
+    <td>0</td>
+    <td>2535.368 r/s</td>
+  </tr>
+    <td>granja web con nginx</td>
+      <td>0.8114 s</td>
+      <td>399.8</td>
+      <td>1246.608 r/s</td>
+  </tr>
+    <td> granja web con haproxy</td>
+    <td>0.5958 s</td>	
+    <td>500</td>
+    <td>1679.102 r/s</td>
 </table>
