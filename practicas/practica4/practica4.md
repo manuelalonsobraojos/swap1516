@@ -199,3 +199,15 @@ Una vez hechas las mediciones con las tres configuraciones realizaremos una tabl
     <td>500</td>
     <td>1679.102 r/s</td>
 </table>
+
+
+
+En la siguiente gráfica podremos observar como el **servidor solo** atiende más peticiones por segundo que las otras dos configuraciones y además tiene menos peticiones fallidas que las otras dos configuraciones.
+![img](https://github.com/manuelalonsobraojos/swap1516/blob/master/practicas/practica4/capturas/grafica1.PNG)
+
+En la siguiente gráfica podemos ver una comparación del tiempo que se tarda en realizar los test en ada configuración y como podemos ver la que menos tarda es el **servidor solo**.
+![img](https://github.com/manuelalonsobraojos/swap1516/blob/master/practicas/practica4/capturas/grafica2.PNG)
+
+
+
+###Comprobar el rendimiento con Siege
