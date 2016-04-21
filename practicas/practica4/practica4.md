@@ -66,8 +66,7 @@ En la siguiente tabla veremos los resultados de ejecutar el comando "**ab**" con
     <th>0</th>
     <th>410.12959 r/s</th>
   </tr>
-</table>
-
+</table>  
 
 En la siguiente tabla veremos los resultados de ejecutar el comando "**ab**" contra la la granja web con **nginx**:
 
