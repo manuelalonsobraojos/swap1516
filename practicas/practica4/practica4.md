@@ -201,12 +201,97 @@ Una vez hechas las mediciones con las tres configuraciones realizaremos una tabl
 </table>
 
 
-En la siguiente gráfica podremos observar como el **servidor solo** atiende más peticiones por segundo que las otras dos configuraciones y además tiene menos peticiones fallidas que las otras dos configuraciones.
+En la siguiente gráfica podremos observar como el **servidor solo** atiende más peticiones por segundo que las otras dos configuraciones y además tiene menos peticiones fallidas que las otras dos configuraciones. La granja web con nginx atiende menos peticiones por segundo respecto a la granja web con haproxy, pero tiene menos peticiones fallidas.
 ![img](https://github.com/manuelalonsobraojos/swap1516/blob/master/practicas/practica4/capturas/grafica1.PNG)
 
-En la siguiente gráfica podemos ver una comparación del tiempo que se tarda en realizar los test en ada configuración y como podemos ver la que menos tarda es el **servidor solo**.
+En la siguiente gráfica podemos ver una comparación del tiempo que se tarda en realizar los test en cada configuración y como podemos ver la que menos tarda es el **servidor solo**. La granja web con haproxy tarda menos en realizar los test que la granja web con nginx.
 ![img](https://github.com/manuelalonsobraojos/swap1516/blob/master/practicas/practica4/capturas/grafica2.PNG)
 
 
 
 ###Comprobar el rendimiento con Siege
+
+En este apartado monitorizaremos el rendimiento de la granja web con **Siege** que es una herramienta de generación de carga HTTP para benchmarking. Para instalarlo utilizaremos el comando:
+```sh
+apt-get install siege
+```
+Una vez lo tenemos instalado pasaremos a ejecutar la herramienta con el siguiente comando:
+```sh
+siege -b -t60S -v http://ip/
+```
+Respecto al comando anterior el parámetro **-b** hace que los tests se ejecuten sin pausa, el parámetro **-t60S** el tiempo exacto que siege se estará ejecutando. Pondremos la **ip** de la máquina contra la que realizaremos el test.
+
+
+<table style="width:100%">
+  <tr>
+    <th>siege  
+    Servidor único</th>
+    <th>Availability</th>
+    <th>Elapsed time</th>
+    <th>Response time</th>
+    <th>Transaction rate</th>
+    <th>Failed transactions</th>
+    <th>Longest transaction</th>
+  </tr>
+  <tr>
+    <td>Medición 1</td>
+    <td>100.00 %</td>		
+    <td>59.29</td>
+    <td>0.01 s</td>
+    <td>1107.71 trans/s</td>		
+    <td>0.42</td>
+    <td>0.00</td>
+  </tr>
+    <td>Medición 2</td>
+      <td>100.00 %</td>
+      <td>59.55 s</td>
+      <td>0.01 s</td>
+      <td>112.12 trans/s</td>		
+      <td>0</td>
+      <td>0.34</td>
+  </tr>
+    <td>Medición 3</td>
+    <td>100.00 %</td>	
+    <td>59.57 s</td>
+    <td>0.01 s</td>
+    <td>1126.39 trans/s</td>		
+    <td>0</td>
+    <td>0.36</td>
+  </tr>
+  </tr>
+    <td>Medición 4</td>
+    <td>100.00 %</td>
+    <td>59.26 s</td>
+    <td>0.01 s</td>
+    <td>1134.15 trans/s</td>		
+    <td>0</td>
+    <td>0.41</td>
+  </tr>
+  </tr>
+    <td>Medición 5</td>
+    <td>100.00 %</td>
+    <td>59.58 s</td>
+    <td>0.01 s</td>
+    <td>1129.12 trans/s</td>		
+    <td>0</td>
+    <td>0.33</td>
+  </tr>
+  </tr>
+    <th>Media</th>
+    <th>100.00 %</th>	
+    <th>59.45 s</th>
+    <th>0.01 s</th>
+    <td>921.898 trans/s</td>		
+    <td>0.084</td>
+    <td>0.288</td>
+  </tr>
+  </tr>
+    <th>Desviación</th>
+    <th>0</th>
+    <th>0 </th>
+    <th>0</th>
+    <td>452.79</td>		
+    <td>0.1878</td>
+    <td>0.16392</td>
+  </tr>
+</table>
