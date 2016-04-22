@@ -221,6 +221,8 @@ siege -b -t60S -v http://ip/
 ```
 Respecto al comando anterior el parámetro **-b** hace que los tests se ejecuten sin pausa, el parámetro **-t60S** el tiempo exacto que siege se estará ejecutando. Pondremos la **ip** de la máquina contra la que realizaremos el test.
 
+En la siguiente tabla mostraremos los resultados de ejecutar el comando contra la ip del **servidor único**.
+
 
 <table style="width:100%">
   <tr>
@@ -293,5 +295,196 @@ Respecto al comando anterior el parámetro **-b** hace que los tests se ejecuten
     <td>452.79</td>		
     <td>0.1878</td>
     <td>0.16392</td>
+  </tr>
+</table>
+
+Ahora en la siguiente tabla mostraremos los resultados de ejecutar el comando contra la dircción de la granja web con **nginx**:
+
+<table style="width:100%">
+  <tr>
+    <th>siege  
+    Granja web nginx</th>
+    <th>Availability</th>
+    <th>Elapsed time</th>
+    <th>Response time</th>
+    <th>Transaction rate</th>
+    <th>Failed transactions</th>
+    <th>Longest transaction</th>
+  </tr>
+  <tr>
+    <td>Medición 1</td>
+    <td>100.00 %</td>		
+    <td>59.19 s</td>
+    <td>0.01 s</td>
+    <td>1107.18 trans/s</td>		
+    <td>0</td>
+    <td>0.29</td>
+  </tr>
+    <td>Medición 2</td>
+      <td>100.00 %</td>
+      <td>59.67 s</td>
+      <td>0.01 s</td>
+      <td>1097.65 trans/s</td>		
+      <td>0</td>
+      <td>0.34</td>
+  </tr>
+    <td>Medición 3</td>
+    <td>100.00 %</td>	
+    <td>59.55 s</td>
+    <td>0.02 s</td>
+    <td>936.36 trans/s</td>		
+    <td>0</td>
+    <td>0.79</td>
+  </tr>
+  </tr>
+    <td>Medición 4</td>
+    <td>100.00 %</td>
+    <td>59.32 s</td>
+    <td>0.01 s</td>
+    <td>1089.41 trans/s</td>		
+    <td>0</td>
+    <td>0.37</td>
+  </tr>
+  </tr>
+    <td>Medición 5</td>
+    <td>100.00 %</td>
+    <td>59.20 s</td>
+    <td>0.01 s</td>
+    <td>1114.61 trans/s</td>		
+    <td>0</td>
+    <td>0.40</td>
+  </tr>
+  </tr>
+    <th>Media</th>
+    <th>100.00 %</th>	
+    <th>59.386 s</th>
+    <th>0.012 s</th>
+    <td>1069.042 trans/s</td>		
+    <td>0.0</td>
+    <td>0.438</td>
+  </tr>
+  </tr>
+    <th>Desviación</th>
+    <th>0</th>
+    <th>0.21501 </th>
+    <th>0.004</th>
+    <td>74.7809</td>		
+    <td>0</td>
+    <td>0.2009</td>
+  </tr>
+</table>
+
+Ahora en la siguiente tabla mostraremos los resultados de ejecutar el comando contra la dircción de la granja web con **haproxy**:
+
+<table style="width:100%">
+  <tr>
+    <th>siege  
+    Granja web haproxy</th>
+    <th>Availability</th>
+    <th>Elapsed time</th>
+    <th>Response time</th>
+    <th>Transaction rate</th>
+    <th>Failed transactions</th>
+    <th>Longest transaction</th>
+  </tr>
+  <tr>
+    <td>Medición 1</td>
+    <td>100.00 %</td>		
+    <td>59.41 s</td>
+    <td>0.01 s</td>
+    <td>1142.70 trans/s</td>		
+    <td>0</td>
+    <td>0.45</td>
+  </tr>
+    <td>Medición 2</td>
+      <td>100.00 %</td>
+      <td>59.25 s</td>
+      <td>0.01 s</td>
+      <td>1139.14 trans/s</td>		
+      <td>0</td>
+      <td>0.31</td>
+  </tr>
+    <td>Medición 3</td>
+    <td>100.00 %</td>	
+    <td>59.19 s</td>
+    <td>0.01 s</td>
+    <td>1137.062 trans/s</td>		
+    <td>0</td>
+    <td>0.38</td>
+  </tr>
+  </tr>
+    <td>Medición 4</td>
+    <td>100.00 %</td>
+    <td>59.46 s</td>
+    <td>0.01 s</td>
+    <td>1156.71 trans/s</td>		
+    <td>0</td>
+    <td>0.40</td>
+  </tr>
+  </tr>
+    <td>Medición 5</td>
+    <td>100.00 %</td>
+    <td>59.20 s</td>
+    <td>0.01 s</td>
+    <td>1136.01 trans/s</td>		
+    <td>0</td>
+    <td>0.44</td>
+  </tr>
+  </tr>
+    <th>Media</th>
+    <th>100.00 %</th>	
+    <th>59.302 s</th>
+    <th>0.01 s</th>
+    <td>1142.32 trans/s</td>		
+    <td>0.0</td>
+    <td>0.396</td>
+  </tr>
+  </tr>
+    <th>Desviación</th>
+    <th>0</th>
+    <th>0.12478 </th>
+    <th>0</th>
+    <td>8.43788</td>		
+    <td>0</td>
+    <td>0.05595</td>
+  </tr>
+</table>
+
+Una vez hecho los test con las tres configuraciones y obtenido las medias, realizamos la siguiente tabla y la siguiente gráfica donde podremos comparar los resultados de las diferentes configuraciones:
+
+<table style="width:100%">
+  <tr>
+    <th>siege</th>
+    <th>Availability</th>
+    <th>Elapsed time</th>
+    <th>Response time</th>
+    <th>Transaction rate</th>
+    <th>Failed transactions</th>
+    <th>Longest transaction</th>
+  </tr>
+  <tr>
+    <td>Servidor solo</td>
+    <td>100.00 %</td>		
+    <td>59.41 s</td>
+    <td>0.01 s</td>
+    <td>1142.70 trans/s</td>		
+    <td>0</td>
+    <td>0.45</td>
+  </tr>
+    <td>Granja web nginx</td>
+      <td>100.00 %</td>
+      <td>59.25 s</td>
+      <td>0.01 s</td>
+      <td>1139.14 trans/s</td>		
+      <td>0</td>
+      <td>0.31</td>
+  </tr>
+    <td>Granja web haproxy</td>
+    <td>100.00 %</td>	
+    <td>59.19 s</td>
+    <td>0.01 s</td>
+    <td>1137.062 trans/s</td>		
+    <td>0</td>
+    <td>0.38</td>
   </tr>
 </table>
