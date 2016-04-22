@@ -15,6 +15,10 @@ ab -n 1000 -c 10 http://ip/
 El parámetro **-c 10** indica que se van a ejecutar 10 solicitudes concurrentemente y el parámetro **-n 1000** indica el número de solicitudes que se le van hacer al servidor, en este caso **1000**.
 La dirección ip que pondremos será la de la máquina contra la que vamos hacer el comando "**ab**".
 
+En la siguiente imagen podremos ver un ejempo de ejecución:
+
+![img](https://github.com/manuelalonsobraojos/swap1516/blob/master/practicas/practica4/capturas/Captura1.PNG)
+
 En la siguiente tabla veremos los resultados de ejecutar el comando "**ab**" contra el servidor solo:
 
 
@@ -205,6 +209,7 @@ En la siguiente gráfica podremos observar como el **servidor solo** atiende má
 ![img](https://github.com/manuelalonsobraojos/swap1516/blob/master/practicas/practica4/capturas/grafica1.PNG)
 
 En la siguiente gráfica podemos ver una comparación del tiempo que se tarda en realizar los test en cada configuración y como podemos ver la que menos tarda es el **servidor solo**. La granja web con haproxy tarda menos en realizar los test que la granja web con nginx.
+
 ![img](https://github.com/manuelalonsobraojos/swap1516/blob/master/practicas/practica4/capturas/grafica2.PNG)
 
 
@@ -450,7 +455,7 @@ Ahora en la siguiente tabla mostraremos los resultados de ejecutar el comando co
   </tr>
 </table>
 
-Una vez hecho los test con las tres configuraciones y obtenido las medias, realizamos la siguiente tabla y la siguiente gráfica donde podremos comparar los resultados de las diferentes configuraciones:
+Una vez hecho los test con las tres configuraciones y obtenido las medias, realizamos la siguiente tabla y las siguiente gráficas donde podremos comparar los resultados de las diferentes configuraciones:
 
 <table style="width:100%">
   <tr>
@@ -489,4 +494,14 @@ Una vez hecho los test con las tres configuraciones y obtenido las medias, reali
   </tr>
 </table>
 
+![img](https://github.com/manuelalonsobraojos/swap1516/blob/master/practicas/practica4/capturas/grafica3.PNG)
 
+como vemos en la anterior gráfica podemos apreciar que el tiempo de respuesta es similar en las tres configuraciones. En cuanto a las peticiones fallidas podemos observar que el servidor solo ha tenido más que las granjas. Finalmente podemos observar que la transición de tiempo más larga la ha tenido la granja web con nginx.  
+
+![img](https://github.com/manuelalonsobraojos/swap1516/blob/master/practicas/practica4/capturas/grafica4.PNG)
+
+En la gráfica anterior podemos ver que la configuración que ha tenido mayor tiempo de ejecución ha sido la del **servisor solo**.
+
+![img](https://github.com/manuelalonsobraojos/swap1516/blob/master/practicas/practica4/capturas/grafica5.PNG)
+
+Finalmente en la gráfica anterior podemos observar que la **granja web con haproxy** ha atendido más peticiones por segundo que las otras dos configuraciones.
