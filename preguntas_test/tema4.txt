@@ -1,0 +1,17 @@
+<pregunta>
+	<enunciado>¿Cuál de las siguientes es una ventaja del uso de GSLB?</enunciado>
+	<opcionA>Implementación</opcionA>
+	<opcionB>Ninguna</opcionB>
+	<opcionC>Facilidad</opcionC>
+	<opcionD>Disponibilidad</opcionD>
+	<solucion>D</solucion>
+</pregunta>
+
+<pregunta>
+	<enunciado>El algoritmo round-robin es el algoritmo de balanceo...</enunciado>
+	<opcionA>Basado en ponderación.</opcionA>
+	<opcionB>Basado en tiempo de respuesta.</opcionB>
+	<opcionC>Basado en turnos.</opcionC>
+	<opcionD>Basado en prioridad.</opcionD>
+	<solucion>C</solucion>
+</pregunta>
