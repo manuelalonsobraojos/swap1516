@@ -292,9 +292,9 @@ En la siguiente tabla mostraremos los resultados de ejecutar el comando contra l
     <th>0</th>
     <th>0 </th>
     <th>0</th>
-    <td>452.79</td>		
-    <td>0.1878</td>
-    <td>0.16392</td>
+    <th>452.79</th>		
+    <th>0.1878</th>
+    <th>0.16392</th>
   </tr>
 </table>
 
@@ -359,18 +359,18 @@ Ahora en la siguiente tabla mostraremos los resultados de ejecutar el comando co
     <th>100.00 %</th>	
     <th>59.386 s</th>
     <th>0.012 s</th>
-    <td>1069.042 trans/s</td>		
-    <td>0.0</td>
-    <td>0.438</td>
+    <th>1069.042 trans/s</th>		
+    <th>0.0</th>
+    <th>0.438</th>
   </tr>
   </tr>
     <th>Desviación</th>
     <th>0</th>
     <th>0.21501 </th>
     <th>0.004</th>
-    <td>74.7809</td>		
-    <td>0</td>
-    <td>0.2009</td>
+    <th>74.7809</th>		
+    <th>0</th>
+    <th>0.2009</th>
   </tr>
 </table>
 
@@ -435,18 +435,18 @@ Ahora en la siguiente tabla mostraremos los resultados de ejecutar el comando co
     <th>100.00 %</th>	
     <th>59.302 s</th>
     <th>0.01 s</th>
-    <td>1142.32 trans/s</td>		
-    <td>0.0</td>
-    <td>0.396</td>
+    <th>1142.32 trans/s</th>		
+    <th>0.0</th>
+    <th>0.396</th>
   </tr>
   </tr>
     <th>Desviación</th>
     <th>0</th>
     <th>0.12478 </th>
     <th>0</th>
-    <td>8.43788</td>		
-    <td>0</td>
-    <td>0.05595</td>
+    <th>8.43788</th>		
+    <th>0</th>
+    <th>0.05595</th>
   </tr>
 </table>
 
@@ -465,26 +465,28 @@ Una vez hecho los test con las tres configuraciones y obtenido las medias, reali
   <tr>
     <td>Servidor solo</td>
     <td>100.00 %</td>		
-    <td>59.41 s</td>
+    <td>59.45 s</td>
     <td>0.01 s</td>
-    <td>1142.70 trans/s</td>		
-    <td>0</td>
-    <td>0.45</td>
+    <td>921.898 trans/s</td>		
+    <td>0.084</td>
+    <td>0.288</td>
   </tr>
     <td>Granja web nginx</td>
       <td>100.00 %</td>
-      <td>59.25 s</td>
-      <td>0.01 s</td>
-      <td>1139.14 trans/s</td>		
-      <td>0</td>
-      <td>0.31</td>
+      <td>59.386 s</td>
+      <td>0.012 s</td>
+      <td>1069.042 trans/s</td>		
+      <td>0.0</td>
+      <td>0.438</td>
   </tr>
     <td>Granja web haproxy</td>
     <td>100.00 %</td>	
-    <td>59.19 s</td>
+    <td>59.302 s</td>
     <td>0.01 s</td>
-    <td>1137.062 trans/s</td>		
+    <td>1142.32 trans/s</td>		
     <td>0</td>
-    <td>0.38</td>
+    <td>0.396</td>
   </tr>
 </table>
+
+
