@@ -52,11 +52,27 @@ Cuando vayamos a clonar una BD debemos de tener en cuneta que esta no se esté p
 mysql> FLUSH TABLES WITH READ LOCK;
 ```
 Una vez ejecutado el comando de la clonación de la BD siendo root, nos pedirá que confirmemos nuestra clave para realizar la operación.
+
 ![img](https://github.com/manuelalonsobraojos/swap1516/blob/master/practicas/practica5/capturas/Captura3.PNG)
 
-Una vez hecho todo esto en la máquina 1 nos vamos a la máquina 2 y copiamos el archivo con la siguiente sintaxis:
+Una vez hecho todo esto en la máquina 1, copiaremos la base de datos a la máquina 2, para ello utilizaremos **spc** con la siguiente sintaxisis.
 ```sh
-scp root@maquina1:/root/contactos.sql /root/
+sudo scp /root/contactos.sql manuel@192.168.244.132:/home/manuel/
+```
+Una vez hecho lo anterior tendremos la base de datos copiada en la carpeta *home* de la máquina 2, ahora solo tendremos que moverla con el comando **mv** de la siguiente formas:
+```sh
+sudo mv contactos.sql /root/
+```
+He tenido que realizar la copia de esta manera porque tenia problemas si hacia el scp directo a la carpeta **root**.
+
+Una vez ya tenemos realizada la copia teneos que tener en cuenta que el archivo .SQL de copia de seguridad tiene formato de texto plano, por lo que primero tendremos que crear la base de datos y luego restaurarla.
+Creamos la base de datos como ya hemos visto anteriormente:
+```sh
+CREATE DATABASE contactos;
+```
+Y una vez creada restauramos los datos contenidos en la BD de la siguiente forma siendo root:
+```sh
+mysql -u root -p contactos < /root/contactos.sql
 ```
 
 
