@@ -88,10 +88,10 @@ Primero configuraremos el maestro, para ello tendremo que editar el archivo de c
 
 Los cambios que tendremos que realizar son:
 <ul>
- <li>Cometaremos el parámetro bin-address **#bind-address 127.0.0.1**</li>
- <li>Le indicamos el archivo donde almacenar el log de errores: **log_error = /var/log/mysql/error.log**</li>
- <li>Establecemos el identificador del servidor, en el archivo de configuración aparecerá comentado, lo descomentaremos: **server-id = 1**</li>
- <li>Estableceremos el registro binario: **log_bin = /var/log/mysql/bin.log**</li>
+ <li>Cometaremos el parámetro bin-address #bind-address 127.0.0.1</li>
+ <li>Le indicamos el archivo donde almacenar el log de errores: log_error = /var/log/mysql/error.log</li>
+ <li>Establecemos el identificador del servidor, en el archivo de configuración aparecerá comentado, lo descomentaremos: server-id = 1</li>
+ <li>Estableceremos el registro binario: log_bin = /var/log/mysql/bin.log</li>
 </ul>
 
 Una vez hecho todo esto reiniciaremos el servicio con el siguiente comando:
@@ -99,5 +99,52 @@ Una vez hecho todo esto reiniciaremos el servicio con el siguiente comando:
 /etc/init.d/mysql restart
 ```
 
+Una vez configurado el maestro pasaremos a configurar el esclavo, para ello tendremo que editar el archivo de configuración **/etc/mysql/my.cnf**. La configuración será igual que la del maestro excepto el **server-id** que será **2**.
 
+Si no nos ha dado ningún error la configuración se habrá realizado con éxito. Una vez hecho esto volveremos al maestro y crearemos un usuario y le daremos permisos de acceso para la clonación.
 
+Entraremos a MySQL y ejecutaremos las siguientes sintaxis:
+```sh
+mysql> CREATE USER esclavo IDENTIFIED BY 'esclavo';
+mysql> GRANT REPLICATION SLAVE ON *.* TO 'esclavo'@'%'
+IDENTIFIED BY 'esclavo';
+mysql> FLUSH PRIVILEGES;
+mysql> FLUSH TABLES;
+mysql> FLUSH TABLES WITH READ LOCK;
+```
+![img](https://github.com/manuelalonsobraojos/swap1516/blob/master/practicas/practica5/capturas/Captura7.PNG) 
+
+Una vez hecho esto, para terminar la configuración del maestro obtenemos la base de datos de datos que vamos a clonar. Para usarlos luego en la configuración del escavo. Utilizaremos la siguiente sintaxis:
+```sh
+SHOW MASTER STATUS
+```
+![img](https://github.com/manuelalonsobraojos/swap1516/blob/master/practicas/practica5/capturas/Captura8.PNG) 
+
+Una vez hecho esto volvemos a la máquina esclava, entramos en mysql y le damos los datos del maestro, para ello ejecutaremos la siguiente sentencia. *MASTER_LOG_FILE* y *MASTER_LOG_POS* los obtenemos al realizar el comando **SHOW MASTER STATUS**.
+```sh
+mysql> CHANGE MASTER TO MASTER_HOST='192.168.31.200',
+MASTER_USER='esclavo', MASTER_PASSWORD='esclavo',
+MASTER_LOG_FILE='mysql-bin.000001', MASTER_LOG_POS=501,
+MASTER_PORT=3306;
+```
+![img](https://github.com/manuelalonsobraojos/swap1516/blob/master/practicas/practica5/capturas/Captura9.PNG) 
+
+Por último arrancaremos el esclavoy ya todo estará listo para que los demonios de MySQL tanto del maestro como el del esclavo clonen automáticamente los datos del servidor maestro. Para ello ejecutaremos la sentencia:
+```sh
+mysql> START SLAVE;
+```
+![img](https://github.com/manuelalonsobraojos/swap1516/blob/master/practicas/practica5/capturas/Captura10.PNG) 
+
+Una vez hecho esto para asegurarnos que todo funciona correctamente ejecutaremos en el esclavo la siguiente sentencia:
+```sh
+mysql> SHOW SLAVE STATUS\G 
+```
+![img](https://github.com/manuelalonsobraojos/swap1516/blob/master/practicas/practica5/capturas/Captura11.PNG) 
+
+Como vemos en la anterior imagen el valor de **Seconds_Behind_Master** es distinto de **null** por lo que todo está correctamente.
+
+Por último vamos a relizar una prueba de que todo está bien, para ello nos vamos al maestro e insertaremos en la base de datos un nuevo dato y comprobaremos que se este dato será insertado automáticamente en la base de datos del esclavo. 
+
+![img](https://github.com/manuelalonsobraojos/swap1516/blob/master/practicas/practica5/capturas/Captura12.PNG) 
+
+Como podemos ver el nuevo dato es insertado automáticamente en el esclavo, por lo que todo se ha realizado correctamente.
