@@ -59,6 +59,8 @@ Una vez hecho todo esto en la máquina 1, copiaremos la base de datos a la máqu
 ```sh
 sudo scp /root/contactos.sql manuel@192.168.244.132:/home/manuel/
 ```
+![img](https://github.com/manuelalonsobraojos/swap1516/blob/master/practicas/practica5/capturas/Captura4.PNG)  
+
 Una vez hecho lo anterior tendremos la base de datos copiada en la carpeta *home* de la máquina 2, ahora solo tendremos que moverla con el comando **mv** de la siguiente formas:
 ```sh
 sudo mv contactos.sql /root/
@@ -70,12 +72,32 @@ Creamos la base de datos como ya hemos visto anteriormente:
 ```sh
 CREATE DATABASE contactos;
 ```
+![img](https://github.com/manuelalonsobraojos/swap1516/blob/master/practicas/practica5/capturas/Captura5.PNG) 
+
 Y una vez creada restauramos los datos contenidos en la BD de la siguiente forma siendo root:
 ```sh
 mysql -u root -p contactos < /root/contactos.sql
 ```
+![img](https://github.com/manuelalonsobraojos/swap1516/blob/master/practicas/practica5/capturas/Captura6.PNG) 
 
+###Replicación de BD mediante una configuración maestro-esclavo
 
+MySQL tiene la opción de configurar el demonio para la clonación de las BD sobre un esclavo con los datos que almacena el maestro. Es un proceso automático pero antes deberemos de hacer algunas configuraciones en el servidor principal y en el esclavo.          
+
+Primero configuraremos el maestro, para ello tendremo que editar el archivo de configuración **/etc/mysql/my.cnf**.
+
+Los cambios que tendremos que realizar son:
+<ul>
+ <li>Cometaremos el parámetro bin-address **#bind-address 127.0.0.1**</li>
+ <li>Le indicamos el archivo donde almacenar el log de errores: **log_error = /var/log/mysql/error.log**</li>
+ <li>Establecemos el identificador del servidor, en el archivo de configuración aparecerá comentado, lo descomentaremos: **server-id = 1**</li>
+ <li>Estableceremos el registro binario: **log_bin = /var/log/mysql/bin.log**</li>
+</ul>
+
+Una vez hecho todo esto reiniciaremos el servicio con el siguiente comando:
+```sh
+/etc/init.d/mysql restart
+```
 
 
 
