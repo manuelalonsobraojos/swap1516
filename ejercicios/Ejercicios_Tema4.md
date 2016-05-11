@@ -6,7 +6,8 @@ Para ver cuanto costaría el precio de un mainframe en la actualidad me fijado e
 Una de las contras del mainframe es que un fallo nos dejaria sin poder servir a los clientes.
 
 ###Ejercicio 4.2
-**Buscar información sobre precio y características de balanceadores hardware específicos. Compara las prestaciones que ofrecen unos y otros.**
+**Buscar información sobre precio y características de balanceadores hardware específicos. Compara las prestaciones que ofrecen unos y otros.**  
+
 LM-2600 Balanceador de carga de servidores - El LoadMaster 2600 está diseñado para cargas de trabajo en crecimiento con las siguientes características:
 <ul>
 <li>4 puertos GbE</li>
