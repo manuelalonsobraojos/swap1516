@@ -1,7 +1,8 @@
 #Ejercicios Tema 4
 
 ###Ejercicio 4.1
-**Buscar información sobre cuánto costaría en la actualidad un mainframe. Comparar precio y potencia entre esa máquina y una granja web de unas prestaciones similares.**
+**Buscar información sobre cuánto costaría en la actualidad un mainframe. Comparar precio y potencia entre esa máquina y una granja web de unas prestaciones similares.**  
+
 Para ver cuanto costaría el precio de un mainframe en la actualidad me fijado en el último mainframe lanzado por la empresa IMB, el z13, su precio no ha sido confirmado por IBM, pero se estima que puede pasar facilmente los cien mil dolares. Si lo comparamos con un granja web en cuanto a precio sería más caro un mainframe, pero ocupa menos espacio y gasta menos electricidad.
 Una de las contras del mainframe es que un fallo nos dejaria sin poder servir a los clientes.
 
@@ -30,7 +31,8 @@ LM-5400 Server Load Balancer – Proporcionar un rendimiento con mejoras SSL, el
 </ul>
 
 ###Ejercicio 4.3
-**Buscar información sobre los métodos de balanceo que implementan los dispositivos recogidos en el ejercicio 4.2**
+**Buscar información sobre los métodos de balanceo que implementan los dispositivos recogidos en el ejercicio 4.2**  
+
 Los métodos de balanceo que implementan los balanceadores comentados en el anterior ejercicio son:
 <ul>
 <li>round Robin</li>
@@ -44,7 +46,8 @@ Los métodos de balanceo que implementan los balanceadores comentados en el ante
 </ul>
 
 ###Ejercicio 4.4
-**Instala y configura en una máquina virtual el balanceador ZenLoadBalancer.**
+**Instala y configura en una máquina virtual el balanceador ZenLoadBalancer.**  
+
 Para su instalación y configuración debemos de realizar los siguientes pasos.
 <ul>
 <li>Podemos instalarlo, con una iso o con un paquete de Zen Load Balancer. En el caso de Debian basta con añadir los siguientes repositorios y ejecutar el comando  **apt-get update && apt-get install zenloadbalancer** para tenerlo andando (se puede gestionar a nivel de servicio).
@@ -71,7 +74,8 @@ Cuando un buscador se encuentra con una redirección 301 reacciona de esta maner
 </ul>
 
 ###Ejercicio 4.6
-**Buscar información sobre los bloques de IP para los distintos países o continentes. Implementar en JavaScript o PHP la detección de la zona desde donde se conecta un usuario**
+**Buscar información sobre los bloques de IP para los distintos países o continentes. Implementar en JavaScript o PHP la detección de la zona desde donde se conecta un usuario**  
+
 Para este script hará falta tener en tu servidor el **archivo GeoIPLocation Library**.
 ```sh
 <?php
