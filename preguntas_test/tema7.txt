@@ -1,0 +1,17 @@
+<pregunta>
+	<enunciado>¿Qué puede hacer RAID?</enunciado>
+	<opcionA>Protege los datos.</opcionA>
+	<opcionB>Mejora el rendimiento en general para todas las aplicaciones.</opcionB>
+	<opcionC>Permite acceder a los datos aunque falle un disco.</opcionC>
+	<opcionD>Facilita la recuperación tras un desastre.</opcionD>
+	<solucion>C</solucion>
+</pregunta>
+
+<pregunta>
+	<enunciado>Los niveles de RAID estándar más usados son:</enunciado>
+	<opcionA>RAID 2 y RAID 3</opcionA>
+	<opcionB>RAID 0 y RAID 6</opcionB>
+	<opcionC>RAID 0 , RAID 1 y RAID 5</opcionC>
+	<opcionD>RAID 2, RAID 6 y RAID 3</opcionD>
+	<solucion>C</solucion>
+</pregunta>
