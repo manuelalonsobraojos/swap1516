@@ -1,0 +1,17 @@
+<pregunta>
+	<enunciado>¿Cuales son los los beneficios de un cortafuegos?</enunciado>
+	<opcionA>Ocultar los servidores finales a otras redes.</opcionA>
+	<opcionB>Mayor rapidez del servidor.</opcionB>
+	<opcionC>Avisar de posibles ataques en tiempo real.</opcionC>
+	<opcionD>La a y la c son correctas.</opcionD>
+	<solucion>D</solucion>
+</pregunta>
+
+<pregunta>
+	<enunciado>¿Cuáles son los procedimientos de autentificación?</enunciado>
+	<opcionA>Una clave o PIN.</opcionA>
+	<opcionB>Un escáner de retina, huella dactilar o ADN.</opcionB>
+	<opcionC>Una tarjeta física que incluirá la clave.</opcionC>
+	<opcionD>Todas las anteriores son ciertas.</opcionD>
+	<solucion>D</solucion>
+</pregunta>
