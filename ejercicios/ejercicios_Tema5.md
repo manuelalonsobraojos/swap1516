@@ -35,6 +35,7 @@ Está disponible para varios sistemas como Unix, GNU/Linux, Mac OS X, Windows y 
 **vmstat**: esta herramienta muestra información sobre el funcionamiento del sistema, la memoria, los procesos, las interrupciones, paginación y bloque E/S.  
 Esta herramienta está disponible en la mayoria de sistemas operativos Unix tales como FreeBSD, Linux or Solaris.
 
-**top**: esta herramineta usada por ventana de comando mediante el comando **top** muestra una lista de procesos que se va actualizando frecuentemente, estos procesos se van ordenando en funcion de uso de CPU y se muestran PID, usuario, %CPU, %MEM.
+**top**: esta herramineta usada por ventana de comando mediante el comando **top** muestra una lista de procesos que se va actualizando frecuentemente, estos procesos se van ordenando en funcion de uso de CPU y se muestran PID, usuario, %CPU, %MEM.  
+Esta herramineta esta disponible en la mayoria de los sistemas operativos Unix.
 
 
