@@ -2,20 +2,25 @@
 
 ###Ejercicio 7.1
 **¿Qué tamaño de unidad de unidad RAID se obtendrá al configurar un RAID 0 a partir de dos discos de 100 GB y 100 GB?** 
+
 El RAID 0 lo que hace es mejorar el rendimiento y aumentar la capacidad del disco final, por lo que la capacidad final de la unidad RAID con dos discos de 100GB será de 200GB.
 
 **¿Qué tamaño de unidad de unidad RAID se obtendrá al configurar un RAID 0 a partir de tres discos de 200 GB cada uno?**
+
 Como hemos visto en el anterior ejercicio al tratarse de un RAID se sumna las capacidades de cada disco por que la unidad RAID será de 600GB.
 
 ###Ejercicio 7.2
 **¿Qué tamaño de unidad de unidad RAID se obtendrá al configurar un RAID 1 a partir de dos discos de 100 GB y 100 GB?**
+
 El tamaño del RAID será de 100GB puesto que la principal caracteristica del RAID 1 es la réplica de los datos en ambos discos.
 
 **¿Qué tamaño de unidad de unidad RAID se obtendrá al configurar un RAID 1 a partir de tres discos de 200 GB cada uno?**
+
 El tamaño del RAID será de 200GB puesto que la información se replica en los tres discos.
 
 ###Ejercicio 7.3
 **¿Qué tamaño de unidad de unidad RAID se obtendrá al configurar un RAID 5 a partir de tres discos de 120 GB cada uno?**
+
 La unidad RAID sería de 240GB quedando un disco de 120GB como disco de paridad.
 
 ###Ejercicio 7.4
