@@ -29,6 +29,7 @@ Dependiendo lo que deseemos hacer usaremos diferentes opciones:
 <li>del: Elimina una ruta de la tabla de enrutamiento</li>
 </ul>
 
+### Ejercicio 3.2
 **Buscar con qué órdenes de terminal o herramientas gráficas podemos configurar bajo Windows y bajo Linux el filtrado y bloqueo de paquetes.** 
 
  **Windows**
