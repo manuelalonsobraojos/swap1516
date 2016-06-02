@@ -28,3 +28,21 @@ Dependiendo lo que deseemos hacer usaremos diferentes opciones:
 <li>add: Añade una nueva ruta a la tabla de enrutamiento</li>
 <li>del: Elimina una ruta de la tabla de enrutamiento</li>
 </ul>
+
+**Buscar con qué órdenes de terminal o herramientas gráficas podemos configurar bajo Windows y bajo Linux el filtrado y bloqueo de paquetes.** 
+
+ **Windows**
+
+Para agregar un filtro de paquetes en Windows, seguiremos los siguientes pasos:
+```sh
+1.  Abrir Enrutamiento y acceso remoto.
+2.  En el árbol de consola, hacemos clic en General Enrutamiento y acceso remoto/nombre de servidor/[IPv4 o IPv6]/General
+3.  En el panel de detalles, hacemos clic con el boton secundadrio en la interfaz donde deseamos un filtro y a continuación, hacemos clic en Propiedades.
+4.  En la ficha General, haga clic en Filtros entrantes o Filtros salientes.
+5.  En el cuadro de diálogo Filtros entrantes o Filtros salientes, haga clic en Nuevo.
+6.  En el cuadro de diálogo Agregar filtro IP, escriba la configuración del filtro y, a continuación, haga clic en Aceptar.
+7.  En Acción de filtrado, seleccione la acción de filtrado apropiada y, a continuación, haga clic en Aceptar.
+```
+
+**Linux**
+Aqui usaremos la herramienta *iptables*. Esta nos permite insertar y eliminar reglas de la tabla de filtrado de paquetes del núcleo. *IPtables* suele venir instalada por defecto en todas las distribuciones oficiales de linux. Aunque su configuración permite el trafico de todos los paquetes.
