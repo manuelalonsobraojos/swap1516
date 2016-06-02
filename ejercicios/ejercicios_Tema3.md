@@ -45,4 +45,14 @@ Para agregar un filtro de paquetes en Windows, seguiremos los siguientes pasos:
 ```
 
 **Linux**
-Aqui usaremos la herramienta *iptables*. Esta nos permite insertar y eliminar reglas de la tabla de filtrado de paquetes del núcleo. *IPtables* suele venir instalada por defecto en todas las distribuciones oficiales de linux. Aunque su configuración permite el trafico de todos los paquetes.
+
+Para agregar un filtro de paquetes en Linux lo haremos mediante la herramineta *iptables*. Esta herramineta nos permite insertar y eliminar reglas de la tabla de filtrado de paquetes del núcleo. 
+*IPtables* suele venir instalada por defecto en todas las distribuciones oficiales de linux, en caso de no ternerla instalada lo podemos hacer ejecutando el siguiente comando:
+```sh
+apt-get install -test iptables
+```
+Para obtener más información sobre esta herramienta podemos ejercutar la orden:
+```sh
+man iptables
+```
+O acceder a la dirección: http://www.ubuntu-es.org/node/422#.V1AGB5GLTIU
